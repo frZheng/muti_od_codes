@@ -47,7 +47,7 @@ print(min_lon)
 print(min_lat)
 print(max_lon)
 print(max_lat)
-
+# exit()
 # exit()
 
 # df = pd.read_csv(r'data/sz_points_v3.csv',header=None)
