@@ -2,11 +2,17 @@
 # data_split = data.split(",")
 # for i in range(len(data_split)):
 #     print(i,data_split[i])
-with open(r"D:\subwayData\mutiOD\TaxiODFlow\20181201\part-00000","r") as fin:
-    lines = fin.readlines()
-    for line in lines:
-        if line[-1] == "\n":
-            line = line[:-1]
-            line_split = line.split(",")
-            if line_split[1] == "93" and line_split[3] == "89":
-                print(line)
+
+# with open(r"D:\subwayData\mutiOD\TaxiODFlow\20181201\part-00000","r") as fin:
+#     lines = fin.readlines()
+#     for line in lines:
+#         if line[-1] == "\n":
+#             line = line[:-1]
+#             line_split = line.split(",")
+#             if line_split[1] == "93" and line_split[3] == "89":
+#                 print(line)
+
+strs = "251008708,南山,2018-01-01T15:53:17.000Z,113.92359513313055,22.524017933756355,2018-01-01T16:34:59.000Z,沙井,113.82444768067496,22.73085930950438,0,0.0,0.0,0.0,0.0,南山;113.92359513313055;22.524017933756355;沙井;113.82444768067496;22.73085930950438,251008708;2018-01-01T15:53:17.000Z;南山;113.92359513313055;22.524017933756355;IGT-130;-;-;-;-;3;2018-01-01T16:34:59.000Z;沙井;113.82444768067496;22.73085930950438;OGT-106;Sub;4"
+str_split = strs.split(",")
+for i in range(len(str_split)):
+    print(i,str_split[i])

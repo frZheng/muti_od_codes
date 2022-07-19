@@ -8,7 +8,8 @@ import datetime
 # print(len(data_split))
 # exit()
 RedionData = []
-with open("data/sz_points_v3.csv", "r") as fin:
+# with open("data/sz_points_GCJ02_test.csv", "r") as fin:
+with open("data/sz_points_GCJ02_oldmap.csv", "r") as fin:
     lines = fin.readlines()
     for line in lines:
         if line[-1] == "\n":
@@ -71,6 +72,7 @@ from geo_utile import bd09_to_gcj02
 
 for i in range(len(center)):
     [lng,lat] = gcj02towgs84(center[i][0], center[i][1])
+    # lng, lat = center[i][0], center[i][1]
     plt.scatter(lng,lat, color='r',s=0.1)
 plt.savefig("pdf/test.pdf")
 # # plt.show()
@@ -99,9 +101,9 @@ plt.savefig("pdf/test.pdf")
 
 
 
-import os
-from PyPDF2 import PdfFileReader, PdfFileWriter
-import time
+# import os
+# from PyPDF2 import PdfFileReader, PdfFileWriter
+# import time
 #file_name = ['周报-郑富荣-202001-2.pdf','周报-郑富荣-202101-3.pdf']
 
 # def getFileName(filedir):

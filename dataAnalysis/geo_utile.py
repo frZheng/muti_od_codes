@@ -276,8 +276,8 @@ if __name__ == '__main__':
     # 113.999462,22.590233(公交数据 cat part-r-00000 | grep 塘朗地铁站)
     # [lng, lat] = [113.999666,22.590097] #SCT行政大楼
     [lng, lat] = [113.890185,22.575738333333334]
-    # [dstlng, dstlat] = gcj02towgs84(lng, lat)
-    # print(str(dstlng) + "," + str(dstlat))
-
     [dstlng, dstlat] = gcj02towgs84(lng, lat)
     print(str(dstlng) + "," + str(dstlat))
+
+    # [dstlng, dstlat] = gcj02towgs84(lng, lat)
+    # print(str(dstlng) + "," + str(dstlat))

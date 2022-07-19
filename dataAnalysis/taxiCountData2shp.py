@@ -114,6 +114,8 @@ print(max_lat)
 #         lon = float(line_split[1])
 #         num =  int(line_split[2])
 
+
+# 数据已经转换成GCJ02
 df = pd.read_csv(r'D:\subwayData\mutiOD\TaxiPointInData\2018-12-18\part-00000',header=None)
 mat = df.values
 max_val = mat.max(axis=0)[-1]
@@ -133,12 +135,12 @@ for i in range(mat.shape[0]):
     # [lon, lat] = bd09_to_gcj02(mat[i][0], mat[i][1])
     [lon, lat] = [mat[i][0], mat[i][1]]
 
-    if lat > (max_lat+0.5) or lat < (min_lat-0.2) or lon > (max_lon+0.5) or lon < (min_lon-0.2):
+    # if lat > (max_lat+0.5) or lat < (min_lat-0.2) or lon > (max_lon+0.5) or lon < (min_lon-0.2):
     # if lat > max_lat or lat < min_lat or lon > max_lon or lon < min_lon:
         # print(mat[i])
-        continue
+        # continue
 
     # print(mat[i])
     plt.scatter(lon,lat, color='r', s=0.5,alpha=mat[i][2]/max_val*9/10+0.1)
-plt.savefig("pdf/test.pdf")
+plt.savefig("pdf/FreeCount.pdf")
 # # plt.show()

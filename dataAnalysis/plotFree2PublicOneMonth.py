@@ -258,7 +258,7 @@ if __name__ == "__main__":
             plt.fill(x_arr, y_arr, alpha=0.3, color="green")
             centerX = RegionData[RegionNum][1]
             centerY = RegionData[RegionNum][2]
-            plt.scatter(centerX, centerY, color='green', s=1)
+            plt.scatter(centerX, centerY, color='green', s=0.1)
             # plt.annotate(s="OD", xy=(centerX, centerY), color='r',weight="ultralight")
         else:
             y_arr = []
@@ -271,7 +271,7 @@ if __name__ == "__main__":
             plt.fill(x_arr, y_arr, alpha=0.3, color="orange")
             centerX = RegionData[RegionNum][1]
             centerY = RegionData[RegionNum][2]
-            plt.scatter(centerX, centerY, color='orange', s=1)
+            plt.scatter(centerX, centerY, color='orange', s=0.1)
             # plt.annotate(s="O", xy=(centerX, centerY), color='r',weight="ultralight")
             y_arr = []
             x_arr = []
@@ -283,7 +283,7 @@ if __name__ == "__main__":
             plt.fill(x_arr, y_arr, alpha=0.3, color="blue")
             centerX = RegionData[RegionNum][1]
             centerY = RegionData[RegionNum][2]
-            plt.scatter(centerX, centerY, color='blue', s=1)
+            plt.scatter(centerX, centerY, color='blue', s=0.1)
             # plt.annotate(s="D", xy=(centerX, centerY), color='r',weight="ultralight")
 
         # x_axis = 'Time'  # x轴的文字
